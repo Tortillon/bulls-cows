@@ -13,7 +13,7 @@ public class BullsAndCows : MonoBehaviour
     public List<string> words= new List<string>();
 
     private int lives = 3;
-    private string secretWord = "Hello";
+    private string secretWord = "hello";
 
 
 
@@ -25,17 +25,9 @@ public class BullsAndCows : MonoBehaviour
         secretWordLengthtext.text = "Secret word length is " + secretWord.Length + ".";
         msgText.text = "Player has " + lives + " lives.";
 
-        Debug.Log("Player has " + lives + " lives.");
-        Debug.Log("Secret Word is " + lives + ".");
-        Debug.Log("Secret word has " + lives + " letters.");
-
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
     public void OnButtonClick(TMP_InputField input)
     {
         if (lives > 0)
@@ -73,7 +65,7 @@ public class BullsAndCows : MonoBehaviour
         }
         else
         {
-            secretWordText.text = "Ypu lost.";
+            secretWordText.text = "You lost.";
             msgText.text = "Player has " + lives + " lives.";
         }
         
